@@ -1,12 +1,33 @@
-# React + Vite
+# 🩺 Skin Lesion Detection using Deep Learning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project aims to develop an automated skin lesion detection system using deep learning to assist in early diagnosis of skin cancer, including melanoma. The system processes dermoscopic images and classifies them into various lesion types using a trained convolutional neural network.
 
-Currently, two official plugins are available:
+## 📌 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Image preprocessing and augmentation
+- Deep learning-based image classification
+- Model evaluation with accuracy, precision, recall, and confusion matrix
+- Streamlit-based web interface for user interaction
+- Option to predict from uploaded images
 
-## Expanding the ESLint configuration
+## 🧠 Model Architecture
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Base Model**: [ResNet50 / EfficientNet / Custom CNN]
+- **Framework**: TensorFlow / Keras / PyTorch
+- **Input**: RGB dermoscopic image
+- **Output**: Class label (e.g., Melanoma, Nevus, Seborrheic Keratosis)
+
+## 🧪 Dataset
+
+- Source: [ISIC 2018 / HAM10000 / Custom dataset]
+- Number of Images: ~10,000
+- Image Size: 224x224 (resized during preprocessing)
+
+> **Note**: Dataset is used only for educational and research purposes.
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/skin-lesion-detection.git
+   cd skin-lesion-detection
